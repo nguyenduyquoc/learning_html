@@ -1,0 +1,13 @@
+.container {
+  height: 150px;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background-color: brown;
+  border: 1px solid black;
+  width: 30%;
+  /* flex-basis: 30%; tương tự như width nhưng khi sử dụng flex-direction column */
+}

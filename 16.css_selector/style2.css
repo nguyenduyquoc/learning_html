@@ -1,0 +1,24 @@
+.demo + .demo.demo2 {
+  color: brown;
+}
+/* tác động vào thẻ có class name là "demo demo2" phía dưới thẻ có class name là "demo" */
+
+div p {
+  color: blueviolet;
+}
+/* tác động vào thẻ p nằm trong thẻ div */
+
+.div_p_1 .div_p_1_p_1 {
+  color: rgb(17, 17, 200);
+}
+/* tác động vào thẻ có class name là "div_p_1_p_1" nằm trong thẻ có class name là "div_p_1" */
+
+.div_p_2 > p {
+  color: burlywood;
+}
+/* tác động vào thẻ p là con trực trực tiếp của thẻ có class name là "div_p_2" */
+
+.demo.demo2 {
+  color: chartreuse;
+}
+/* tác động vào thẻ có class name là "demo demo2" */

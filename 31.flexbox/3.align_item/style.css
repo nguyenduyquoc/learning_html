@@ -1,0 +1,31 @@
+* {
+  font-size: 1.5rem;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 150px;
+  color: rgb(132, 44, 44);
+  display: flex;
+  justify-content: space-evenly;
+
+  /* align-items: stretch; mặc định */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  align-items: baseline;
+
+  background-color: blue;
+}
+
+.box {
+  background-color: rgb(14, 1, 1);
+}
+
+.box1 {
+  height: 100px;
+  font-size: 3rem;
+}

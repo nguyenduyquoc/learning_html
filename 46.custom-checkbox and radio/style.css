@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: system-ui, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.container h1 {
+  font-size: 38px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-top: 16px;
+}
+
+.form-label,
+.form-input {
+  display: block;
+}
+
+.form-label {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form-input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 240px;
+  height: 34px;
+  outline: none;
+}
+
+.btn {
+  margin-top: 18px;
+  padding: 10px 28px;
+  border: 1px solid transparent;
+  font-size: 18px;
+  font-weight: 600;
+  white-space: 3px;
+  color: #fff;
+  background: rgb(255, 110, 43);
+  border-radius: 8px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+label {
+  user-select: none;
+}
+
+.checkbox-group label {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.checkbox-group label::after,
+.checkbox-group label::before {
+  content: "";
+  display: inline-block;
+}
+
+/* sử dụng before để tạo hình vuông giống với checkbox */
+.checkbox-group label::before {
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgb(255, 110, 43);
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.checkbox-group [type="checkbox"]:checked ~ label::before {
+  background-color: rgb(255, 110, 43);
+}
+
+.checkbox-group [type="checkbox"]:checked ~ label::after {
+  width: 8px;
+  height: 4px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  rotate: -45deg;
+}
+
+.checkbox-group label::after {
+  position: absolute;
+  top: 7px;
+  left: 2px;
+}
+
+/* custom radio */
+.radio-group label {
+  position: relative;
+  margin-right: 10px;
+}
+
+.radio-group label::before,
+.radio-group label::after {
+  content: "";
+  display: inline-block;
+}
+
+.radio-group label::before {
+  margin-right: 4px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid rgb(255, 110, 43);
+  border-radius: 50%;
+}
+
+.radio-group label::after {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(255, 110, 43);
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  display: none;
+}
+
+#male:checked + label::after,
+#female:checked + label::after,
+#other:checked + label::after {
+  display: inline-block;
+}

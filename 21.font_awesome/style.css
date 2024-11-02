@@ -1,0 +1,10 @@
+li {
+  list-style-type: none;
+  margin-top: 4px;
+}
+
+.fa-house,
+.fa-facebook,
+.fa-youtube {
+  color: rgb(71, 21, 21);
+}

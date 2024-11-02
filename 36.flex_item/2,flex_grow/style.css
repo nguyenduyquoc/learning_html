@@ -1,0 +1,22 @@
+.container {
+  height: 150px;
+  display: flex;
+  background-color: blueviolet;
+}
+
+.box {
+  background-color: brown;
+  border: 1px solid black;
+  flex-grow: 1;
+}
+
+.box1,
+.box3 {
+  flex-grow: 1;
+  /* chiếm một ô */
+}
+
+.box2 {
+  flex-grow: 2;
+  /* chiếm hai ô */
+}

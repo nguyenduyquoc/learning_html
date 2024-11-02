@@ -1,0 +1,29 @@
+* {
+  color: black;
+  font-family: sans-serif;
+}
+
+p {
+  color: rgb(52, 2, 2);
+  font-size: 16px;
+}
+
+h1 {
+  color: rgb(119, 24, 24);
+}
+
+#paragraph_2 {
+  color: rgb(94, 35, 149);
+}
+
+.paragraph {
+  color: rgb(8, 0, 14);
+}
+
+.paragraph_more {
+  font-size: 25px;
+}
+
+.ul_item_li {
+  list-style: none;
+}

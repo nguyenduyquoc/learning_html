@@ -1,0 +1,14 @@
+.box {
+  width: 800px;
+  height: 600px;
+  background-image: url(../imgs/image_hotel_1.jpg);
+  /* background-repeat: repeat; */
+  /* background-repeat: no-repeat; */
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  background-size: contain;
+  background-size: auto;
+  background-size: cover;
+
+  background-position: center;
+}

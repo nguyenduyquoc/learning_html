@@ -1,0 +1,22 @@
+.container {
+  background-color: rgb(186, 123, 245);
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-wap sẽ cho các child của container được xuống hàng khi không đủ chỗ */
+  /* flex-wrap: wrap-reverse; */
+
+  height: 200px;
+
+  /* align-content giống với align-items nhưng đối với container có nhiều hàng */
+  align-content: center;
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly;
+}
+
+.box {
+  width: 25%;
+  background-color: brown;
+}

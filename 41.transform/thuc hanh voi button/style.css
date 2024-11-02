@@ -1,0 +1,105 @@
+button {
+  display: flex;
+  margin: 30px;
+  outline: none;
+  border: none;
+}
+
+.btn {
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 999px;
+  color: #fff;
+  background: rgb(160, 25, 160);
+  transition-duration: 2s;
+}
+
+/* 1. thay đổi vị trí */
+.btn-1:hover {
+  transform: translateX(50px);
+  transform: translateY(50px);
+  transform: translate(50px, 50px);
+  translate: 50px 50px;
+}
+
+/* 2. thay đổi background */
+.btn-2:hover {
+  background: rgb(116, 108, 116);
+  color: rgb(32, 4, 58);
+}
+
+/* 3. màu nền thay đổi và chuyển từ trái qua phải */
+.btn-3 {
+  position: relative;
+  /* sử dụng position: relative; để cung cấp cho lớp giả btn-3::after
+  vị trí tương đối, để lớp giả này có thể được đặt tương đối so với btn-3. */
+
+  overflow: hidden;
+  /* Giới hạn các phần tử con không thể vượt ra khỏi khu vực của nút 
+  (sử dụng điều này để ngăn phần nền mở rộng ra bên ngoài nút). */
+}
+
+.btn__span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0px;
+  background: rgb(116, 108, 116);
+  transition: width 0.5s linear;
+}
+
+.btn-3:hover::after {
+  width: 100%;
+}
+
+/* 4. màu nền thay đổi và chuyển từ trái qua phải và chạy tiếp*/
+.btn-4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0px;
+  background: rgb(116, 108, 116);
+  transition: width 0.5s linear;
+}
+
+.btn-4:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+/* 5. màu nền thay đổi và chuyển từ trên xuống dưới và chạy tiếp*/
+.btn-5 {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0px;
+  background: rgb(116, 108, 116);
+  transition: height 0.5s linear;
+}
+
+.btn-5:hover::after {
+  top: 0;
+  height: 100%;
+}

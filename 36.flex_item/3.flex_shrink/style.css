@@ -1,0 +1,21 @@
+.container {
+  height: 150px;
+  display: flex;
+  background-color: blueviolet;
+  /*overflow: auto; /*and flex-shrink: 0; của .box */
+}
+
+.box {
+  background-color: brown;
+  border: 1px solid black;
+  width: 30%;
+  /* flex-shrink: 0; */
+}
+
+.box1,
+.box2 {
+  flex-shrink: 0; /*không bị co lại */
+  /* flex-shrink: 1; /*mặc định */
+  /* flex-shrink: 2; /*co lại 2 lần */
+  /* flex-shrink: 3; co lại 3 lần */
+}

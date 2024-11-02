@@ -1,0 +1,19 @@
+.container {
+  height: 150px;
+  display: flex;
+  background-color: blueviolet;
+  align-items: center;
+}
+
+.box {
+  background-color: brown;
+  border: 1px solid burlywood;
+}
+
+.box2,
+.box4,
+.box6 {
+  align-self: flex-end;
+  /* box2 box4 box6 sẽ nằm dưới cùng của box container chứa nó */
+  /* căn chỉnh item một cách riêng biệt */
+}

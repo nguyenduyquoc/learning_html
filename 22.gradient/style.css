@@ -1,0 +1,43 @@
+.box {
+  width: 800px;
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+.box1 {
+  background-image: linear-gradient(to right, red, green);
+}
+
+.box2 {
+  background-image: linear-gradient(to left, red, green, blue);
+}
+
+.box3 {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    270deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.text_highlight {
+  color: #4158d0;
+}
+
+/* trường hợp trình duyệt có hỗ trợ */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .text_highlight {
+    color: transparent;
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      270deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}

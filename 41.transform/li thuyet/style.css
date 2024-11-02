@@ -1,0 +1,42 @@
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  background-color: rgb(92, 35, 146);
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 2s;
+}
+
+.box:hover {
+  /* 1. Rotate -- quay */
+  transform: rotate(360deg);
+
+  /* 2.  Scale -- phóng to */
+  transform: scale(1.5, 1); /* mở rộng chiều rộng 1.5, chiều cao 1 */
+  transform: scale(1.5);
+
+  /* 3. skew nghiêng cạnh trái - phải */
+  /* 3.1 theo chiều X */
+  transform: skewX(30deg);
+
+  /* 3.2 theo chiều Y */
+  transform: skewY(30deg);
+
+  /* 3.3 theo cả hai chiều */
+  transform: skew(30deg, 30deg);
+
+  /* 4. dịch chuyển theo chiều ngang và chiều dọc */
+  /* transform: translateX(50px);
+  translate: 50px; */
+
+  /* transform: translateY(50px); */
+
+  /* transform: translate(50px, 50px); */
+
+  /* 5. kêt hợp */
+  transform: rotate(360deg) scale(1.5) skewX(30deg);
+}
